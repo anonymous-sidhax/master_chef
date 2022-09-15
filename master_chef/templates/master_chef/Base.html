@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="favicon" type="image/jpg" href= "images/favicon-32x32.png"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>{% block Title %}Base HTML{% endblock %}</title>
+  </head>
+  <body>
+    {% include 'master_chef/Header.html' %}
+    {% block body %}{% endblock body %}
+    {% include 'master_chef/Footer.html' %}
+  </body>
+</html>
